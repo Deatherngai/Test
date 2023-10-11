@@ -10,7 +10,7 @@
           <a class="nav-link active" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="">About</a>
+          <a class="nav-link active" href="LB_info.php">Library Info</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="user-list.php">user-list</a>
@@ -19,7 +19,7 @@
           <a class="nav-link active" href="#">Regiter</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Login</a>
+          <a class="nav-link active" href="sigin.php">Login</a>
         </li>
     </div>
   </div>
