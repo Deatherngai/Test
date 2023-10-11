@@ -11,6 +11,7 @@ include('includes/header.php')
                 </div>
                 </div>
                 <div class="card-body">
+                <table class="table table-bordered table-striped">
                             <?php
                             include('dbcon.php');
                             $ref_table = "Library";
@@ -18,13 +19,19 @@ include('includes/header.php')
                             if($fetchdatat>0){
                                 $i = 1;
                                 foreach($fetchdatat as $key => $row){
-                                        echo $key;
-                                        $i++;
-                                    }
+                                    ?>
+                                    <tr><td>Library</td><td><?=$row['Library']?></td></tr>
+                                    <tr><td>Location</td><td><?=$row['Location']?></td></tr>
+                                    <tr><td>Contact</td><td><?=$row['Contact']?></td></tr>
+                                    <?php
+                                }
                             }else{
-                                echo "";
+                                ?>
+                                <tr><td colspan="2">No records<td></tr>
+                                <?php
                             }
                             ?>
+                            </table>
                 </div>
             </div>
         </div>
